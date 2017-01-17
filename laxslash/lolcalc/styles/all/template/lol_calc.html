@@ -1,0 +1,47 @@
+<!-- INCLUDE simple_header.html -->
+	<h2 class="solo">{L_LAXSLASH_LOLCALC_CALC_HDR}</h2>
+
+	<div class="panel">
+		<div class="inner">
+			<p>{L_LAXSLASH_LOLCALC_CALC_EXPLAIN}</p>
+
+			<!-- IF S_ERROR -->
+				<div style="text-align: center;">
+					<p class="error">
+						{ERROR_MSG}
+					</p>
+				</div>
+			<!-- ENDIF -->
+			<form method="post" name="lolcalc" action="{S_CHECK_KDA_ACTION}">
+				<fieldset class="fields1">
+					<dl>
+						<dt><label for="lolcalc_kills">{L_LAXSLASH_LOLCALC_KILLS_LBL}{L_COLON}</label></dt>
+						<dd><input type="number" name="lolcalc_kills" id="lolcalc_kills" value="{LOLCALC_KILLS}" class="text small" min="0" /></dd>
+					</dl>
+					<dl>
+						<dt><label for="lolcalc_assists">{L_LAXSLASH_LOLCALC_ASSISTS_LBL}{L_COLON}</label></dt>
+						<dd><input type="number" name="lolcalc_assists" id="lolcalc_assists" value="{LOLCALC_ASSISTS}" class="text small" min="0" /></dd>
+					</dl>
+					<dl>
+						<dt><label for="lolcalc_deaths">{L_LAXSLASH_LOLCALC_DEATHS_LBL}{L_COLON}</label></dt>
+						<dd><input type="number" name="lolcalc_deaths" id="lolcalc_deaths" value="{LOLCALC_DEATHS}" class="text small" min="0" /></dd>
+					</dl>
+				</fieldset>
+
+				<!-- IF S_LOLCALC_RESULT -->
+					<hr />
+
+					<div style="text-align: center;"><h2><!-- IF S_VALID -->{L_LAXSLASH_LOLCALC_IS_VALID}<!-- ELSE -->{L_LAXSLASH_LOLCALC_IS_INVALID}<!-- ENDIF --><!-- IF S_SHOW_KDA -->{L_COLON} {KDA}<!-- ENDIF --></h3></div>
+				<!-- ELSE -->
+					<hr />
+				<!-- ENDIF -->
+
+				<fieldset class="submit-buttons">
+					{S_FORM_TOKEN}
+					<input type="reset" class="button2" name="reset" value="{L_RESET}" />
+					<input type="submit" class="button1" name="check_lolkda" value="{L_SUBMIT}" />
+				</fieldset>
+			</form>
+		</div>
+	</div>
+<!-- INCLUDE simple_footer.html -->

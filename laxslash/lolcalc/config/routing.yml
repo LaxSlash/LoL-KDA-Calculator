@@ -1,0 +1,3 @@
+laxslash_lolcalc_main_calc_route:
+    path: /lolcalc
+    defaults: { _controller: laxslash.lolcalc.calc_page:handle }

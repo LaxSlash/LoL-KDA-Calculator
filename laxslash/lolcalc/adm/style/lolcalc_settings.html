@@ -1,0 +1,42 @@
+<!-- INCLUDE overall_header.html -->
+
+<h1>{L_LAXSLASH_LOLCALC_CONFIG_HDR}</h1>
+
+<p>{L_LAXSLASH_LOLCALC_CONFIG_EXPLAIN}</p>
+
+<!-- IF S_ERROR -->
+	<div class="errorbox">
+		<h3>{L_ERRORS}</h3>
+
+		<p>{ERROR_MSG}</p>
+	</div>
+<!-- ENDIF -->
+
+<form action="{U_ACTION}" method="post" name="lolcalc_config">
+	<fieldset>
+		<legend>{L_LAXSLASH_LOLCALC_SETTINGS_LEGEND}</legend>
+		<dl>
+			<dt><label>{L_LAXSLASH_LOLCALC_COUNT_ZERO_AS_POSITIVE_OPT_LBL}{L_COLON}</label></dt>
+			<dd>
+				<input type="radio" class="check" name="count_zero_as_positive" id="count_zero_as_positive_y" value="1" <!-- IF COUNT_ZERO_AS_POSITIVE -->checked <!-- ENDIF -->/> <label for="count_zero_as_positive_y">{L_YES}</label> &nbsp;
+				<input type="radio" class="check" name="count_zero_as_positive" id="count_zero_as_positive_n" value="0" <!-- IF !COUNT_ZERO_AS_POSITIVE -->checked <!-- ENDIF -->/> <label for="count_zero_as_positive_n">{L_NO}</label>
+			</dd>
+		</dl>
+	</fieldset>
+
+	<fieldset>
+		<legend>{L_LAXSLASH_LOLCALC_MULTIPLIERS_LEGEND}</legend>
+		<dl>
+			<dt><label for="lolcalc_assists_multiplayer">{L_LAXSLASH_LOLCALC_ASSISTS_MULTIPLAYER_LBL}{L_COLON}</label></dt>
+			<dd><input type="text" class="text small" name="lolcalc_assists_multiplayer" id="lolcalc_assists_multiplayer" size="3" value="{LOLCALC_ASSISTS_MULTIPLAYER}" /></dd>
+		</dl>
+	</fieldset>
+
+	<fieldset class="submit-buttons">
+		{S_FORM_TOKEN}
+		<input type="submit" class="button1" name="lolcalc_config_update" id="submit" value="{L_SUBMIT}" />&nbsp;
+		<input type="reset" class="button2" name="reset" id="reset" value="{L_RESET}" />
+	</fieldset>
+</form>
+
+<!-- INCLUDE overall_footer.html -->

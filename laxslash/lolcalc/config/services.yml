@@ -1,0 +1,14 @@
+services:
+  laxslash.lolcalc.main_listener:
+    class: laxslash\lolcalc\event\main_listener
+    tags:
+      - { name: event.listener }
+  laxslash.lolcalc.calc_page:
+    class: laxslash\lolcalc\controller\calc_page
+    arguments:
+      - '@user'
+      - '@auth'
+      - '@controller.helper'
+      - '@request'
+      - '@template'
+      - '@config'

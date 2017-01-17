@@ -1,0 +1,24 @@
+{
+	"name": "laxslash/lolcalc",
+	"type": "phpbb-extension",
+	"description": "A simple extension used to calculate the KDA Ratio in order to determine if the ratio constitutes a valid screenshot (Positive KDA).",
+	"homepage": "",
+	"version": "0.1 ALPHA",
+	"time": "January 17th, 2017 2:12 AM EST (GMT -5)",
+	"license": "GPL-2.0",
+	"authors": [{
+		"name": "lax.slash",
+		"email": "LaxSlash1993@gmail.com",
+		"role": "Lead Developer",
+		"homepage": "https://www.github.com/LaxSlash"
+	}],
+	"require": {
+		"php": ">=5.3.3"
+	},
+	"extra": {
+		"display-name": "LoL KDA Calculator",
+		"soft-require": {
+			"phpbb/phpbb": "3.1.9"
+		}
+	}
+}
