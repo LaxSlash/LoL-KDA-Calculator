@@ -30,7 +30,8 @@ $lang = array_merge($lang, array(
 	// Messages
 	'LAXSLASH_LOLCALC_SUCCESS_UPD_CONFIG'				=>		'Successfully updated the LoL KDA Calculator configuration.',
 	'LAXSLASH_LOLCALC_ERR_MULTIPLAYER_MUST_BE_FLOAT'	=>		'The assists multiplier must be an integer or a float.',
-	'LAXSLASH_LOCALC_INVALID_MODE'						=>		'Invalid mode selected for League of Legends KDA Calculator administration.',
+	'LAXSLASH_LOLCALC_INVALID_MODE'						=>		'Invalid mode selected for League of Legends KDA Calculator administration.',
+	'LAXSLASH_LOLCALC_NO_AUTH'							=>		'You do not have permissions to manage the League of Legends KDA Calculator.',
 
 	// Logs
 	'LAXSLASH_LOLCALC_LOG_CONFIG_CHANGE'				=>		'<strong>Altered LoL KDA Calculator settings</strong>',
