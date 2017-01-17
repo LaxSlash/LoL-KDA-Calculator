@@ -52,4 +52,5 @@ $lang = array_merge($lang, array(
 	'LAXSLASH_LOLCALC_KILLS_NOT_INT'					=>		'Kills must be a valid and positive integer. Decimals are not accepted.',
 	'LAXSLASH_LOLCALC_ASSISTS_NOT_INT'					=>		'Assists must be a valid and positive integer. Decimals are not accepted.',
 	'LAXSLASH_LOLCALC_DEATHS_NOT_INT'					=>		'Deaths must be a valid and positive integer. Decimals are not accepted.',
+	'LAXSLASH_LOLCALC_NO_AUTH_USE_CALC'					=>		'You do not have permission to use the League of Legends KDA Calculator.',
 ));
